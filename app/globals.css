@@ -6,4 +6,7 @@
     --color-border: #2b2b2b;
     --color-text: #cccccc;
     --color-primary: #569cd6;
+
+    /* 英語はmono、日本語はnotoにフォールバックしてあげる*/
+    --font-base: var(--font-jetBrainsMono), var(--font-notoSans), monospace;
 }
