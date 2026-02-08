@@ -3,7 +3,9 @@
 @theme {
     --color-bg: #1f1f1f;
     --color-bg-sub: #181818;
+    --color-selection: #04395e;
     --color-border: #2b2b2b;
+    --color-focus: #0078d4;
     --color-text: #cccccc;
     --color-primary: #569cd6;
 
