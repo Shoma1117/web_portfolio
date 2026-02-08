@@ -9,6 +9,24 @@
     --color-text: #cccccc;
     --color-primary: #569cd6;
 
+
     /* 英語はmono、日本語はnotoにフォールバックしてあげる*/
     --font-base: var(--font-jetBrainsMono), var(--font-notoSans), monospace;
+}
+
+@utility text-heading {
+    font-size: clamp(2rem, 1.5rem + 2.5vw, 3.5rem);
+}
+
+@utility text-subHeading {
+    font-size: clamp(1.5rem, 1.5rem + 1.25vw, 2.5rem);
+}
+
+/* サイドバーの見出し */
+@utility text-toc {
+    font-size: clamp(1rem, 1rem + 0.50vw, 1.5rem);
+}
+
+@utility text-description {
+    font-size: clamp(1rem, 1rem + 0.5vw, 1.8rem);
 }

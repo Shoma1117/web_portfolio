@@ -7,7 +7,7 @@ export default function NavigationLayout({ children }: { children: React.ReactNo
     const [ isOpen, setIsOpen ] = useState(false);
     return(
         //PCはサイドバー、スマホはトグルボタンを設置し、押したら出てくるように
-        <aside className={`fixed left-0 lg:static lg:translate-x-0 z-40 transition-transform duration-400 inset-y-0 w-[18rem] ease-in-out bg-bg-sub border-r border-border pt-8
+        <aside className={`fixed left-0 md:static md:translate-x-0 z-40 transition-transform duration-400 inset-y-0 w-[18rem] ease-in-out bg-bg-sub border-r border-border pt-8
             ${isOpen ? "translate-x-0" : "-translate-x-full"}`}>
             <button 
                 className="md:hidden absolute right-0 translate-x-full bottom-8 bg-bg-sub border-y-3 border-r-3 border-border"

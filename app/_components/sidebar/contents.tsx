@@ -60,7 +60,7 @@ export default function SidebarContents(){
                     ${h.level === 3 ? "ml-16" : "ml-4"}
                     ${activeSection === h.id ? "bg-selection border border-focus" : ""}`}   
             >
-                <div className="flex">
+                <div className="flex text-toc items-center">
                     {h.level === 2 ? <ChevronDown size={24} /> : ""}
                     {h.text}
                 </div>
