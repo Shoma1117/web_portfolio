@@ -1,7 +1,11 @@
 import About from "./_components/about";
+import Skill from "./_components/skills/skill";
 
 export default function Portfolio() {
   return (
-    <About />
+    <>
+      <About />
+      <Skill />
+    </>
   );
 }

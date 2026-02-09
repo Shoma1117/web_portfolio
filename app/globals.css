@@ -11,6 +11,12 @@
   --color-supplement: #a9a9a9;
   --color-primary: #569cd6;
 
+  /* VS Code シンタックスカラー */
+  --color-syntax-string: #ce9178;
+  --color-syntax-comment: #6a9955;
+  --color-syntax-function: #dcdcaa;
+  --color-syntax-purple: #c586c0;
+
   /* 英語はmono、日本語はnotoにフォールバックしてあげる*/
   --font-base: var(--font-jetBrainsMono), var(--font-notoSans), monospace;
 }
@@ -38,4 +44,14 @@
 @utility text-description {
   font-size: clamp(1rem, 1rem + 0.5vw, 1.7rem);
   letter-spacing: -0.1rem;
+}
+
+/* カテゴリ見出し（GAME, WEB, OTHER） */
+@utility text-label {
+  font-size: 0.875rem;
+}
+
+/* タグバッジ */
+@utility text-tag {
+  font-size: 0.75rem;
 }
