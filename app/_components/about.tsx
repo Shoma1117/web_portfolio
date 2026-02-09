@@ -3,7 +3,7 @@ import { Github, Mail } from "lucide-react";
 export default function About() {
   return (
     <section className="flex flex-col lg:flex-row items-center justify-center py-24 gap-32 min-h-dvh">
-      <div className="flex flex-col ;g:items-end lg:w-1/2">
+      <div className="flex flex-col lg:items-end lg:w-1/2">
         <div>
           <h2 id="Portfolio" className="text-heading heading-section">
             Portfolio Site
