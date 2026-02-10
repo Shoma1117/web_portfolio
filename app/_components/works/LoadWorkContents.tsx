@@ -13,6 +13,7 @@ export default function LoadWorkContents() {
         }
         catch {
             wc[work.slug] = "";
+            console.warn(`File Not Found: ${filePath}`);
         }
     });
 
