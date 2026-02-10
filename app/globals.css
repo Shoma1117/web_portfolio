@@ -35,7 +35,7 @@
   letter-spacing: -0.1rem;
 }
 
-/* サイドバーの見出し */
+/* 見出し */
 @utility text-toc {
   font-size: clamp(1rem, 1rem + 0.5vw, 1.5rem);
   letter-spacing: -0.1rem;
@@ -46,7 +46,7 @@
   letter-spacing: -0.1rem;
 }
 
-/* カテゴリ見出し（GAME, WEB, OTHER） */
+/* カテゴリ見出し */
 @utility text-label {
   font-size: 0.875rem;
 }
