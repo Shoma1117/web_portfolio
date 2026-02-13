@@ -75,6 +75,13 @@ const portfolio: WorkItem = {
     category: "Web"
 };
 
+const genso: WorkItem = {
+    name: "元素騎士オンライン",
+    thumbnail: "/works/thumbnail-genso.webp",
+    slug: "genso",
+    category: "Web"
+}
+
 export const workData: WorkItem[] = [
     rogueDungeon,
     amidaChangeRoute,
@@ -84,7 +91,8 @@ export const workData: WorkItem[] = [
     anchorGravity,
     behaviorTree,
     onlineQuiz,
-    portfolio
+    portfolio,
+    genso
 ];
 
 //mdファイル名と内容の紐づけ
