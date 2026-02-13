@@ -27,7 +27,7 @@ export default function MdModal({
     >
       <button onClick={closeModal}>閉じる</button>
 
-      <div className="prose prose-invert prose-pre:bg-transparent">
+      <div className="prose prose-invert prose-pre:bg-transparent [&_summary]:text-primary">
         <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw, rehypeHighlight]}>{mdContents}</ReactMarkdown>
       </div>
     </Modal>
