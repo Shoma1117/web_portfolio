@@ -1,0 +1,165 @@
+<svg viewBox="0 0 720 520" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', 'Hiragino Sans', 'Noto Sans JP', sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 7" refX="9" refY="3.5" markerWidth="8" markerHeight="6" orient="auto-start-reverse">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#484f58"/>
+    </marker>
+    <marker id="arrow-r" viewBox="0 0 10 7" refX="9" refY="3.5" markerWidth="8" markerHeight="6" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#484f58"/>
+    </marker>
+  </defs>
+
+  <rect width="720" height="520" rx="12" fill="#0d1117"/>
+
+  <!-- ==================== Section 1: Runtime ==================== -->
+  <text x="360" y="28" text-anchor="middle" fill="#c9d1d9" font-size="14" font-weight="bold" letter-spacing="1">システム構成</text>
+  <line x1="100" y1="40" x2="620" y2="40" stroke="#21262d"/>
+
+  <!-- ── Browser ── -->
+  <rect x="180" y="58" width="270" height="56" rx="10" fill="#161b22" stroke="#30363d"/>
+  <circle cx="210" cy="86" r="16" fill="#0d1117" stroke="#58a6ff" stroke-width="1.5"/>
+  <g transform="translate(210,86)" stroke="#58a6ff" fill="none">
+    <rect x="-7" y="-7" width="14" height="9" rx="1" stroke-width="1.3"/>
+    <line x1="0" y1="2" x2="0" y2="5" stroke-width="1.3"/>
+    <line x1="-3" y1="5" x2="3" y2="5" stroke-width="1.3"/>
+  </g>
+  <text x="237" y="82" fill="#c9d1d9" font-size="13" font-weight="bold">プレイヤー</text>
+  <text x="237" y="98" fill="#8b949e" font-size="10">ブラウザ</text>
+
+  <!-- Arrow ↕ -->
+  <line x1="315" y1="114" x2="315" y2="151" stroke="#484f58" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <rect x="330" y="124" width="118" height="16" rx="8" fill="#161b22" stroke="#30363d" stroke-width="0.5"/>
+  <text x="389" y="136" text-anchor="middle" fill="#8b949e" font-size="9">WebSocket (wss://)</text>
+
+  <!-- ── Cloudflare Pages ── -->
+  <rect x="180" y="156" width="270" height="56" rx="10" fill="#161b22" stroke="#30363d"/>
+  <circle cx="210" cy="184" r="16" fill="#0d1117" stroke="#f0883e" stroke-width="1.5"/>
+  <g transform="translate(200,174) scale(0.833)" fill="#f0883e">
+    <path d="M16.5088 16.8447c.1475-.5068.0908-.9707-.1553-1.3154-.2246-.3164-.6045-.499-1.0615-.5205l-8.6592-.1123a.1559.1559 0 0 1-.1333-.0713c-.0283-.042-.0351-.0986-.021-.1553.0278-.084.1123-.1484.2036-.1562l8.7359-.1123c1.0351-.0489 2.1601-.8868 2.5537-1.9136l.499-1.3013c.0215-.0561.0293-.1128.0147-.168-.5625-2.5463-2.835-4.4453-5.5499-4.4453-2.5039 0-4.6284 1.6177-5.3876 3.8614-.4927-.3658-1.1187-.5625-1.794-.499-1.2026.119-2.1665 1.083-2.2861 2.2856-.0283.31-.0069.6128.0635.894C1.5683 13.171 0 14.7754 0 16.752c0 .1748.0142.3515.0352.5273.0141.083.0844.1475.1689.1475h15.9814c.0909 0 .1758-.0645.2032-.1553l.12-.4268zm2.7568-5.5634c-.0771 0-.1611 0-.2383.0112-.0566 0-.1054.0415-.127.0976l-.3378 1.1744c-.1475.5068-.0918.9707.1543 1.3164.2256.3164.6055.498 1.0625.5195l1.8437.1133c.0557 0 .1055.0263.1329.0703.0283.043.0351.1074.0214.1562-.0283.084-.1132.1485-.204.1553l-1.921.1123c-1.041.0488-2.1582.8867-2.5527 1.914l-.1406.3585c-.0283.0713.0215.1416.0986.1416h6.5977c.0771 0 .1474-.0489.169-.126.1122-.4082.1757-.837.1757-1.2803 0-2.6025-2.125-4.727-4.7344-4.727"/>
+  </g>
+  <text x="237" y="180" fill="#c9d1d9" font-size="13" font-weight="bold">Cloudflare Pages</text>
+  <text x="237" y="196" fill="#8b949e" font-size="10">Next.js 15 / TypeScript</text>
+
+  <!-- Arrow ↕ -->
+  <line x1="315" y1="212" x2="315" y2="249" stroke="#484f58" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <rect x="330" y="222" width="118" height="16" rx="8" fill="#161b22" stroke="#30363d" stroke-width="0.5"/>
+  <text x="389" y="234" text-anchor="middle" fill="#8b949e" font-size="9">WebSocket (wss://)</text>
+
+  <!-- ── EC2 / Docker ── -->
+  <rect x="180" y="254" width="270" height="56" rx="10" fill="#161b22" stroke="#30363d"/>
+  <circle cx="210" cy="282" r="16" fill="#0d1117" stroke="#a371f7" stroke-width="1.5"/>
+  <g transform="translate(210,282)" stroke="#a371f7" fill="none">
+    <rect x="-7" y="-7" width="14" height="5" rx="1" stroke-width="1.3"/>
+    <circle cx="-4" cy="-4.5" r="1" fill="#a371f7" stroke="none"/>
+    <rect x="-7" y="1" width="14" height="5" rx="1" stroke-width="1.3"/>
+    <circle cx="-4" cy="3.5" r="1" fill="#a371f7" stroke="none"/>
+  </g>
+  <text x="237" y="278" fill="#c9d1d9" font-size="13" font-weight="bold">AWS EC2 / Docker</text>
+  <text x="237" y="294" fill="#8b949e" font-size="10">C++ / Boost.Beast</text>
+
+  <!-- Arrow → to Gemini -->
+  <line x1="450" y1="282" x2="493" y2="282" stroke="#484f58" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="471" y="274" text-anchor="middle" fill="#8b949e" font-size="9">HTTPS</text>
+
+  <!-- ── Gemini API ── -->
+  <rect x="498" y="254" width="180" height="56" rx="10" fill="#161b22" stroke="#30363d"/>
+  <circle cx="528" cy="282" r="16" fill="#0d1117" stroke="#79c0ff" stroke-width="1.5"/>
+  <g transform="translate(518,272) scale(0.833)" fill="#79c0ff">
+    <path d="M11.04 19.32Q12 21.51 12 24q0-2.49.93-4.68.96-2.19 2.58-3.81t3.81-2.55Q21.51 12 24 12q-2.49 0-4.68-.93a12.3 12.3 0 0 1-3.81-2.58 12.3 12.3 0 0 1-2.58-3.81Q12 2.49 12 0q0 2.49-.96 4.68-.93 2.19-2.55 3.81a12.3 12.3 0 0 1-3.81 2.58Q2.49 12 0 12q2.49 0 4.68.96 2.19.93 3.81 2.55t2.55 3.81"/>
+  </g>
+  <text x="555" y="278" fill="#c9d1d9" font-size="13" font-weight="bold">Gemini API</text>
+  <text x="555" y="294" fill="#8b949e" font-size="10">Google AI</text>
+
+  <!-- ==================== Section 2: CI/CD ==================== -->
+  <text x="360" y="348" text-anchor="middle" fill="#c9d1d9" font-size="14" font-weight="bold" letter-spacing="1">CI / CD パイプライン</text>
+  <line x1="100" y1="360" x2="620" y2="360" stroke="#21262d"/>
+
+  <!-- ── Client Pipeline ── -->
+  <text x="28" y="402" fill="#f0883e" font-size="11" font-weight="bold">Client</text>
+
+  <!-- GitHub -->
+  <rect x="80" y="382" width="110" height="42" rx="8" fill="#161b22" stroke="#30363d"/>
+  <circle cx="102" cy="403" r="12" fill="#0d1117" stroke="#8b949e" stroke-width="1"/>
+  <g transform="translate(95,396) scale(0.583)" fill="#8b949e">
+    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+  </g>
+  <text x="122" y="407" fill="#c9d1d9" font-size="11">GitHub</text>
+
+  <line x1="190" y1="403" x2="222" y2="403" stroke="#484f58" stroke-width="1.5" marker-end="url(#arrow-r)"/>
+  <text x="206" y="395" text-anchor="middle" fill="#6e7681" font-size="8">push</text>
+
+  <!-- GitHub Actions -->
+  <rect x="227" y="382" width="140" height="42" rx="8" fill="#161b22" stroke="#30363d"/>
+  <circle cx="249" cy="403" r="12" fill="#0d1117" stroke="#3fb950" stroke-width="1"/>
+  <g transform="translate(249,403) scale(0.65)" stroke="#3fb950" fill="none">
+    <circle cx="0" cy="0" r="3" stroke-width="2"/>
+    <line x1="0" y1="-6" x2="0" y2="-4" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="0" y1="4" x2="0" y2="6" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="-6" y1="0" x2="-4" y2="0" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="4" y1="0" x2="6" y2="0" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <text x="269" y="399" fill="#c9d1d9" font-size="10">GitHub Actions</text>
+  <text x="269" y="412" fill="#6e7681" font-size="8">Test + Build</text>
+
+  <line x1="367" y1="403" x2="399" y2="403" stroke="#484f58" stroke-width="1.5" marker-end="url(#arrow-r)"/>
+  <text x="383" y="395" text-anchor="middle" fill="#6e7681" font-size="8">deploy</text>
+
+  <!-- Cloudflare Pages -->
+  <rect x="404" y="382" width="160" height="42" rx="8" fill="#161b22" stroke="#30363d"/>
+  <circle cx="426" cy="403" r="12" fill="#0d1117" stroke="#f0883e" stroke-width="1"/>
+  <g transform="translate(419,396) scale(0.583)" fill="#f0883e">
+    <path d="M16.5088 16.8447c.1475-.5068.0908-.9707-.1553-1.3154-.2246-.3164-.6045-.499-1.0615-.5205l-8.6592-.1123a.1559.1559 0 0 1-.1333-.0713c-.0283-.042-.0351-.0986-.021-.1553.0278-.084.1123-.1484.2036-.1562l8.7359-.1123c1.0351-.0489 2.1601-.8868 2.5537-1.9136l.499-1.3013c.0215-.0561.0293-.1128.0147-.168-.5625-2.5463-2.835-4.4453-5.5499-4.4453-2.5039 0-4.6284 1.6177-5.3876 3.8614-.4927-.3658-1.1187-.5625-1.794-.499-1.2026.119-2.1665 1.083-2.2861 2.2856-.0283.31-.0069.6128.0635.894C1.5683 13.171 0 14.7754 0 16.752c0 .1748.0142.3515.0352.5273.0141.083.0844.1475.1689.1475h15.9814c.0909 0 .1758-.0645.2032-.1553l.12-.4268zm2.7568-5.5634c-.0771 0-.1611 0-.2383.0112-.0566 0-.1054.0415-.127.0976l-.3378 1.1744c-.1475.5068-.0918.9707.1543 1.3164.2256.3164.6055.498 1.0625.5195l1.8437.1133c.0557 0 .1055.0263.1329.0703.0283.043.0351.1074.0214.1562-.0283.084-.1132.1485-.204.1553l-1.921.1123c-1.041.0488-2.1582.8867-2.5527 1.914l-.1406.3585c-.0283.0713.0215.1416.0986.1416h6.5977c.0771 0 .1474-.0489.169-.126.1122-.4082.1757-.837.1757-1.2803 0-2.6025-2.125-4.727-4.7344-4.727"/>
+  </g>
+  <text x="446" y="407" fill="#c9d1d9" font-size="10">Cloudflare Pages</text>
+
+  <!-- ── Server Pipeline ── -->
+  <text x="28" y="466" fill="#a371f7" font-size="11" font-weight="bold">Server</text>
+
+  <!-- GitHub -->
+  <rect x="80" y="446" width="110" height="42" rx="8" fill="#161b22" stroke="#30363d"/>
+  <circle cx="102" cy="467" r="12" fill="#0d1117" stroke="#8b949e" stroke-width="1"/>
+  <g transform="translate(95,460) scale(0.583)" fill="#8b949e">
+    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+  </g>
+  <text x="122" y="471" fill="#c9d1d9" font-size="11">GitHub</text>
+
+  <line x1="190" y1="467" x2="222" y2="467" stroke="#484f58" stroke-width="1.5" marker-end="url(#arrow-r)"/>
+  <text x="206" y="459" text-anchor="middle" fill="#6e7681" font-size="8">push</text>
+
+  <!-- GitHub Actions -->
+  <rect x="227" y="446" width="140" height="42" rx="8" fill="#161b22" stroke="#30363d"/>
+  <circle cx="249" cy="467" r="12" fill="#0d1117" stroke="#3fb950" stroke-width="1"/>
+  <g transform="translate(249,467) scale(0.65)" stroke="#3fb950" fill="none">
+    <circle cx="0" cy="0" r="3" stroke-width="2"/>
+    <line x1="0" y1="-6" x2="0" y2="-4" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="0" y1="4" x2="0" y2="6" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="-6" y1="0" x2="-4" y2="0" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="4" y1="0" x2="6" y2="0" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <text x="269" y="463" fill="#c9d1d9" font-size="10">GitHub Actions</text>
+  <text x="269" y="476" fill="#6e7681" font-size="8">Docker Build</text>
+
+  <line x1="367" y1="467" x2="399" y2="467" stroke="#484f58" stroke-width="1.5" marker-end="url(#arrow-r)"/>
+  <text x="383" y="459" text-anchor="middle" fill="#6e7681" font-size="8">push</text>
+
+  <!-- Docker Hub -->
+  <rect x="404" y="446" width="120" height="42" rx="8" fill="#161b22" stroke="#30363d"/>
+  <circle cx="426" cy="467" r="12" fill="#0d1117" stroke="#2496ed" stroke-width="1"/>
+  <g transform="translate(419,460) scale(0.583)" fill="#2496ed">
+    <path d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m0 2.716h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.185.185.186m-2.93 0h2.12a.186.186 0 00.184-.186V6.29a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.887c0 .102.083.185.185.186m-2.964 0h2.119a.186.186 0 00.185-.186V6.29a.185.185 0 00-.185-.185H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.185.186.186m5.893 2.715h2.118a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 00.185-.185V9.006a.185.185 0 00-.184-.186h-2.12a.186.186 0 00-.186.186v1.887c0 .102.084.185.186.185m-2.92 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.082.185.185.185M23.763 9.89c-.065-.051-.672-.51-1.954-.51-.338.001-.676.03-1.01.087-.248-1.7-1.653-2.53-1.716-2.566l-.344-.199-.226.327c-.284.438-.49.922-.612 1.43-.23.97-.09 1.882.403 2.661-.595.332-1.55.413-1.744.42H.751a.751.751 0 00-.75.748 11.376 11.376 0 00.692 4.062c.545 1.428 1.355 2.48 2.41 3.124 1.18.723 3.1 1.137 5.275 1.137.983.003 1.963-.086 2.93-.266a12.248 12.248 0 003.823-1.389c.98-.567 1.86-1.288 2.61-2.136 1.252-1.418 1.998-2.997 2.553-4.4h.221c1.372 0 2.215-.549 2.68-1.009.309-.293.55-.65.707-1.046l.098-.288Z"/>
+  </g>
+  <text x="446" y="471" fill="#c9d1d9" font-size="10">Docker Hub</text>
+
+  <line x1="524" y1="467" x2="556" y2="467" stroke="#484f58" stroke-width="1.5" marker-end="url(#arrow-r)"/>
+  <text x="540" y="459" text-anchor="middle" fill="#6e7681" font-size="8">pull</text>
+
+  <!-- AWS EC2 -->
+  <rect x="561" y="446" width="110" height="42" rx="8" fill="#161b22" stroke="#30363d"/>
+  <circle cx="583" cy="467" r="12" fill="#0d1117" stroke="#a371f7" stroke-width="1"/>
+  <g transform="translate(583,467) scale(0.6)" stroke="#a371f7" fill="none">
+    <rect x="-7" y="-7" width="14" height="5" rx="1" stroke-width="2"/>
+    <circle cx="-4" cy="-4.5" r="1" fill="#a371f7" stroke="none"/>
+    <rect x="-7" y="1" width="14" height="5" rx="1" stroke-width="2"/>
+    <circle cx="-4" cy="3.5" r="1" fill="#a371f7" stroke="none"/>
+  </g>
+  <text x="603" y="471" fill="#c9d1d9" font-size="10">AWS EC2</text>
+</svg>

@@ -12,10 +12,10 @@ export type WorkItem = {
     category: WorkCategory;     //GameかWebのカテゴリ
 };
 
-const rogeDangion: WorkItem = {
-    name: "Roge_Dangion",
+const rogueDungeon: WorkItem = {
+    name: "Rogue Dungeon",
     thumbnail: "/works/thumbnail-rouge.webp",
-    slug: "roge_Dangion",
+    slug: "Rogue_Dungeon",
     category: "Game"
 };
 
@@ -76,7 +76,7 @@ const portfolio: WorkItem = {
 };
 
 export const workData: WorkItem[] = [
-    rogeDangion,
+    rogueDungeon,
     amidaChangeRoute,
     quickGunman,
     defenceTreasure,
