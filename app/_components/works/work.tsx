@@ -25,7 +25,8 @@ export default function Work({ workContents }: { workContents: WorkContents }) {
       {/* 上部のタブ */}
       <div className="flex">
         <button
-          className="px-8 text-description"
+          className={`px-8 text-description
+            ${tabState === "Web" ? "bg-syntax-comment" : ""}`}
           onClick={() => {
             setTabState("Web");
           }}
@@ -33,7 +34,8 @@ export default function Work({ workContents }: { workContents: WorkContents }) {
           Web
         </button>
         <button
-          className="px-8 text-description"
+          className={`px-8 text-description
+            ${tabState === "Game" ? "bg-syntax-string" : ""}`}
           onClick={() => {
             setTabState("Game");
           }}
@@ -54,8 +56,8 @@ export default function Work({ workContents }: { workContents: WorkContents }) {
           .filter((data) => data.category === tabState)
           .map((data) => (
             <button key={data.name} onClick={() => openModal(data)}>
-              <div className="bg-bg-accent">
-                <Image src={data.thumbnail} alt="" width={420} height={300} />
+              <div className="flex flex-col items-center bg-bg-accent">
+                <Image className="aspect-[7/4] object-cover" src={data.thumbnail} alt="" width={420} height={300} />
                 <p
                   className="text-description font-bolt text-primary"
                 >
